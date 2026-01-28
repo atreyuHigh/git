@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Header section -->
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+
+        <!-- Input section for adding new tasks -->
+        <section class="input-section">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    class="task-input" 
+                    placeholder="Enter a new task..."
+                    aria-label="New task input"
+                >
+                <button id="addBtn" class="add-button" aria-label="Add task">
+                    Add Task
+                </button>
+            </div>
+        </section>
+
+        <!-- Tasks list section -->
+        <section class="tasks-section">
+            <ul id="tasksList" class="tasks-list" aria-label="Tasks list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Empty state message -->
+        <div id="emptyMessage" class="empty-message" aria-live="polite">
+            <p>No tasks yet. Add one to get started!</p>
+        </div>
+    </main>
+
+    <!-- Link to JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
